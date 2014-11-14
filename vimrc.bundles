@@ -1,0 +1,52 @@
+	if &compatible
+ set nocompatible
+end
+
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+
+" Let Vundle manage Vundle
+Plugin 'gmarik/Vundle.vim'
+
+" Define bundles
+
+" Apparence
+Plugin 'skwp/vim-colors-solarized'
+Plugin 'itchyny/lightline.vim'
+
+" Project
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree.git'
+Plugin 'jistr/vim-nerdtree-tabs.git'
+
+" Git
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-git'
+
+" Lenguages
+Plugin 'pangloss/vim-javascript'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
+
+" Snippets
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
+" Others
+Plugin 'tpope/vim-endwise.git'
+Plugin 'tpope/vim-ragtag'
+Plugin 'tpope/vim-repeat.git'
+Plugin 'tpope/vim-surround.git'
+
+" Plugin 'vim-scripts/ctags.vim'
+" Plugin 'vim-scripts/matchit.zip'
+" Plugin 'vim-scripts/tComment'
+
+if filereadable(expand("~/.vimrc.bundles.local"))
+  source ~/.vimrc.bundles.local
+endif
+
+call vundle#end()
+filetype on
