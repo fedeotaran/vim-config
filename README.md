@@ -4,23 +4,28 @@ This is my files configurations.
 
 Install
 =======
-# TODO
+* TODO
 
 Make your own configurations
 ============================
-# TODO
+* TODO
 
 What's included?
 ================
-# TODO
+## Vim plugins
+* Vundle
+* NERDTree with NERDTree-tabs
+* Ctrl-p
+* Lightline
+* Solarized
+* Ultisnips with Vim-snippets
 
 Upgrading
 =========
 ```bash
-cd <rute_of_your_instalation>/dotfiles
+cd <path_of_your_installation>/dotfiles
 git pull
 ```
-
 License
 =======
-# TODO
+* TODO
