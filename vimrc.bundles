@@ -1,4 +1,4 @@
-	if &compatible
+if &compatible
  set nocompatible
 end
 
@@ -40,10 +40,7 @@ Plugin 'tpope/vim-ragtag'
 Plugin 'tpope/vim-repeat.git'
 Plugin 'tpope/vim-surround.git'
 
-" Plugin 'vim-scripts/ctags.vim'
-" Plugin 'vim-scripts/matchit.zip'
-" Plugin 'vim-scripts/tComment'
-
+" Sources local bundles
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
