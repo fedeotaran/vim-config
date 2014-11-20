@@ -12,7 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 " Define bundles
 
 " Apparence
-Plugin 'skwp/vim-colors-solarized'
+Plugin 'morhetz/gruvbox'
 Plugin 'itchyny/lightline.vim'
 
 " Project

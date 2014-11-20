@@ -48,7 +48,7 @@ syntax on
 syntax enable
 set t_Co=256
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
 
 filetype plugin indent on
 
