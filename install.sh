@@ -10,13 +10,11 @@ B="\033[0;34m"
 Y="\033[0;33m"
 RESET="\033[0m"
 
-# Array of filenames to skip, any arguments passed to
-# the script will be added here
-skip=("README.md", "backups", $0, $*)
+ln_files=("vim" "vimrc" "vimrc.bundles")
 bckpdir="${PWD}/backups/$(date "+%Y%m%d%H%M%S_backup")"
 [ ! -d $bckpdir ] && mkdir -p $bckpdir
 for name in *; do
-  if [[ ! ${skip[*]} =~ $name ]]; then
+  if [[ ${ln_files[*]} =~ $name ]]; then
     target="$HOME/.$name"
 
     if [ -a $target ]; then
