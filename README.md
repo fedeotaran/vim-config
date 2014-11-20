@@ -4,7 +4,7 @@ This is my files configurations.
 
 Requeriments
 ============
-You most have install Solarized colorscheme in your terminal.
+You must have install Solarized colorscheme in your terminal.
 
 Install
 =======
