@@ -2,10 +2,6 @@ dotfiles
 ========
 This is my files configurations.
 
-Requeriments
-============
-You must have install Solarized colorscheme in your terminal.
-
 Install
 =======
 ```zsh
