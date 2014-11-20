@@ -5,14 +5,14 @@ This is my files configurations.
 Install
 =======
 ```zsh
-git clone git clone git@github.com:fedeotaran/dotfiles.git
-cd <path_of_your_installation>/dotfiles
-bash install.sh
+git clone git@github.com:fedeotaran/dotfiles.git && cd dotfiles && bash install.sh
 ```
 
 Make your own configurations
 ============================
-* TODO
+Put your own customizations in dotfiles appended with .local:
+* `.vimrc.local`
+* `.vimrc.bundles.local`
 
 What's included?
 ================
@@ -32,4 +32,4 @@ git pull
 ```
 License
 =======
-* TODO
+It is free software and may be redistributed under the terms specified in the [LICENSE](https://github.com/fedeotaran/dotfiles/blob/master/LICENSE) file.
