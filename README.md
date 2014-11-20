@@ -14,6 +14,7 @@ Upgrading
 cd <path_of_your_installation>/dotfiles
 git pull
 ```
+Make sure to run `install.sh` after to install new plugins.
 
 Make your own configurations
 ============================
