@@ -4,7 +4,11 @@ This is my files configurations.
 
 Install
 =======
-* TODO
+```zsh
+git clone git clone git@github.com:fedeotaran/dotfiles.git
+cd <path_of_your_installation>/dotfiles
+bash install.sh
+```
 
 Make your own configurations
 ============================
@@ -22,7 +26,7 @@ What's included?
 
 Upgrading
 =========
-```bash
+```zsh
 cd <path_of_your_installation>/dotfiles
 git pull
 ```
