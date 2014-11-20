@@ -17,12 +17,7 @@ Put your own customizations in dotfiles appended with .local:
 What's included?
 ================
 ## Vim plugins
-* Vundle
-* NERDTree with NERDTree-tabs
-* Ctrl-p
-* Lightline
-* Solarized
-* Ultisnips with Vim-snippets
+This dotfiles includes [this plugin list.](https://github.com/fedeotaran/dotfiles/blob/master/vimrc.bundles)
 
 Upgrading
 =========
@@ -30,6 +25,7 @@ Upgrading
 cd <path_of_your_installation>/dotfiles
 git pull
 ```
+
 License
 =======
 It is free software and may be redistributed under the terms specified in the [LICENSE](https://github.com/fedeotaran/dotfiles/blob/master/LICENSE) file.
