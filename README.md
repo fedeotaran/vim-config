@@ -5,7 +5,7 @@ This is my files configurations.
 Install
 =======
 ```zsh
-git clone git@github.com:fedeotaran/dotfiles.git && cd dotfiles && bash install.sh
+git clone https://github.com/fedeotaran/dotfiles.git && cd dotfiles && bash install.sh
 ```
 
 Make your own configurations
