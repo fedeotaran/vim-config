@@ -1,6 +1,7 @@
 if exists("g:ctrlp_user_command")
   unlet g:ctrlp_user_command
 endif
+
 if executable('ag')
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command =
@@ -32,6 +33,10 @@ nnoremap <silent> ,b :CtrlPBuffer<cr>
 " Cmd-Shift-P to clear the cache
 nnoremap <silent> <D-P> :ClearCtrlPCache<cr>
 
+"Cmd-Shift-(M)ethod - jump to a method (tag in current file)
+"Ctrl-m is not good - it overrides behavior of Enter
+nnoremap <silent> <D-M> :CtrlPBufTag<CR>
+
 " Idea from : http://www.charlietanksley.net/blog/blog/2011/10/18/vim-navigation-with-lustyexplorer-and-lustyjuggler/
 " Open CtrlP starting from a particular path, making it much
 " more likely to find the correct thing first. mnemonic 'jump to [something]'
@@ -48,8 +53,4 @@ map ,jd :CtrlP db<CR>
 map ,jC :CtrlP config<CR>
 map ,jV :CtrlP vendor<CR>
 map ,jF :CtrlP factories<CR>
-map ,jT :CtrlP test<CR>
-
-"Cmd-Shift-(M)ethod - jump to a method (tag in current file)
-"Ctrl-m is not good - it overrides behavior of Enter
-nnoremap <silent> <D-M> :CtrlPBufTag<CR>
+map ,jt :CtrlP test<CR>

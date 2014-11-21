@@ -40,7 +40,6 @@ if filereadable(expand("~/.vim/settings.vim"))
   source ~/.vim/settings.vim
 endif
 
-
 " ** Color settings
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
