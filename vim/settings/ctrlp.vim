@@ -15,9 +15,9 @@ else
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
 endif
 
-" Default to filename searches - so that appctrl will find application
+" Default to no filename searches - so that appctrl will find application
 " controller
-let g:ctrlp_by_filename = 1
+let g:ctrlp_by_filename = 0
 
 " Don't jump to already open window. This is annoying if you are maintaining
 " several Tab workspaces and want to open two windows into the same file.
