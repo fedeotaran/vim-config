@@ -49,6 +49,14 @@ set t_Co=256
 set background=dark
 colorscheme gruvbox
 
+" disable Background Color Erase (BCE) so that color schemes
+" render properly when inside 256-color tmux and GNU screen.
+" see also http://snk.tuxfamily.org/log/vim-256color-bce.html
+" Tmux compatibility
+if &term =~ '256color'
+  set t_ut=
+endif
+
 filetype plugin indent on
 
 " ** Source local configs

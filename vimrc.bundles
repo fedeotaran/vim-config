@@ -35,6 +35,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 " Others
+Plugin 'bogado/file-line.git'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-endwise.git'
 Plugin 'tpope/vim-ragtag'
