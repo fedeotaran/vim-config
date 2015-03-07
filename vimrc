@@ -15,6 +15,10 @@ set expandtab       " use spaces instead of tabset shiftwidth=2
 " ** Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
 
+" Split panels
+set splitbelow
+set splitright
+
 " ** Others
 set history=50      " history commands
 set ruler           " show the cursor position all the time
