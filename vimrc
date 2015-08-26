@@ -11,9 +11,14 @@ set tabstop=2
 set shiftwidth=2
 set shiftround
 set expandtab       " use spaces instead of tabset shiftwidth=2
+set tabpagemax=50
 
 " ** Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
+
+" Split panels
+set splitbelow
+set splitright
 
 " ** Others
 set history=50      " history commands
@@ -31,6 +36,24 @@ set splitbelow      " split new pane below current
 
 " ** Set mapleader
 let mapleader=","
+
+" toggles whether or not the current window is automatically zoomed
+function! ToggleMaxWins()
+  if exists('g:windowMax')
+    au! maxCurrWin
+    wincmd =
+    unlet g:windowMax
+  else
+    augroup maxCurrWin
+      " au! BufEnter * wincmd _ | wincmd |
+      " maximize it!
+      au! WinEnter * wincmd _ | wincmd |
+    augroup END
+    do maxCurrWin WinEnter
+    let g:windowMax=1
+  endif
+endfunction
+nnoremap <Leader>z :call ToggleMaxWins()<CR>
 
 " ** Source bundles
 if filereadable(expand("~/.vimrc.bundles"))

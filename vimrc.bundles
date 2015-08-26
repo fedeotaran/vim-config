@@ -12,16 +12,17 @@ Plugin 'gmarik/Vundle.vim'
 " Define bundles
 
 " Apparence
-Plugin 'morhetz/gruvbox'
-Plugin 'itchyny/lightline.vim'
+Plugin 'morhetz/gruvbox'         " Theme colors
+Plugin 'itchyny/lightline.vim'   " Information line
 
 " Project
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree.git'
-Plugin 'jistr/vim-nerdtree-tabs.git'
+Plugin 'kien/ctrlp.vim'              " Search projects files
+Plugin 'tacahiroy/ctrlp-funky'       " Search methods definitions on current file
+Plugin 'scrooloose/nerdtree.git'     " Show files tree on project
+Plugin 'jistr/vim-nerdtree-tabs.git' " NERDTree feel like a true panel, independent of tabs.
 
 " Git
-Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive' " Git wrapper
 Plugin 'tpope/vim-git'
 
 " Lenguages

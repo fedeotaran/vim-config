@@ -10,6 +10,7 @@ B="\033[0;34m"
 Y="\033[0;33m"
 RESET="\033[0m"
 
+# Files to create symbolics links
 ln_files=("vim" "vimrc" "vimrc.bundles")
 bckpdir="${PWD}/backups/$(date "+%Y%m%d%H%M%S_backup")"
 [ ! -d $bckpdir ] && mkdir -p $bckpdir
