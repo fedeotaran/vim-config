@@ -26,6 +26,8 @@ set number          " use normal numbers
 set relativenumber  " and relative line numbers
 set backspace=2     " backspace deletes like most programs in insert mode
 set autoread        " automatically read a file when it is changed from the outside
+set splitright      " split new pane right current
+set splitbelow      " split new pane below current
 
 " ** Set mapleader
 let mapleader=","
@@ -63,3 +65,6 @@ filetype plugin indent on
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+let &colorcolumn=join(range(81,999),",")
+let &colorcolumn="90,".join(range(400,999),",")
