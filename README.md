@@ -1,6 +1,6 @@
 Dotfiles
 ========
-This is my files configurations.
+These are my configuration files.
 
 ## Install
 ```bash
@@ -25,7 +25,7 @@ Put your own customizations in dotfiles appended with .local:
 * [Vundle](https://github.com/gmarik/Vundle.vim) to manage plugins.
 * [Gruvbox](https://github.com/morhetz/gruvbox) to color scheme.
 * [lightline](https://github.com/itchyny/lightline.vim) to statusline/tabline.
-* [Ctrlp](https://github.com/kien/ctrlp.vim) to file finding.
+* [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim) to file finding.
 * [NERDtree](https://github.com/scrooloose/nerdtree) to explore your filesystem and to open files and directories.
 * [Ultisnips](https://github.com/sirver/ultisnips) and [Vim-snippets](https://github.com/honza/vim-snippets) for vim snippets.
 * And many others plugins...

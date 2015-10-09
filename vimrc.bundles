@@ -16,7 +16,7 @@ Plugin 'morhetz/gruvbox'         " Theme colors
 Plugin 'itchyny/lightline.vim'   " Information line
 
 " Project
-Plugin 'kien/ctrlp.vim'              " Search projects files
+Plugin 'ctrlpvim/ctrlp.vim'          " Search projects files
 Plugin 'tacahiroy/ctrlp-funky'       " Search methods definitions on current file
 Plugin 'scrooloose/nerdtree.git'     " Show files tree on project
 Plugin 'jistr/vim-nerdtree-tabs.git' " NERDTree feel like a true panel, independent of tabs.
