@@ -6,46 +6,43 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
-" Let Vundle manage Vundle
-Plugin 'gmarik/Vundle.vim'
+Plugin 'gmarik/Vundle.vim' " Vim plugin manager
 
-" Define bundles
+" ---------- Apparence ----------
+Plugin 'morhetz/gruvbox'       " Theme colors
+Plugin 'itchyny/lightline.vim' " Information line
 
-" Apparence
-Plugin 'morhetz/gruvbox'         " Theme colors
-Plugin 'itchyny/lightline.vim'   " Information line
-
-" Project
+" ---------- Project ----------
 Plugin 'ctrlpvim/ctrlp.vim'          " Search projects files
 Plugin 'tacahiroy/ctrlp-funky'       " Search methods definitions on current file
 Plugin 'scrooloose/nerdtree.git'     " Show files tree on project
-Plugin 'jistr/vim-nerdtree-tabs.git' " NERDTree feel like a true panel, independent of tabs.
+Plugin 'jistr/vim-nerdtree-tabs.git' " NERDTree feel like a true panel, independent of tabs
 
-" Git
+" ---------- Git ----------
 Plugin 'tpope/vim-fugitive' " Git wrapper
-Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-git'      " One command is provided to show a diff of the current commit
 
-" Lenguages
-Plugin 'pangloss/vim-javascript'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails'
+" ---------- Lenguages ----------
+Plugin 'pangloss/vim-javascript'                " Provides syntax and indent plugins for JS
+Plugin 'othree/javascript-libraries-syntax.vim' " Syntax file for JavaScript libraries
+Plugin 'vim-ruby/vim-ruby'                      " Contains Vim configuration files for editing and compiling Ruby
+Plugin 'tpope/vim-rails'                        " Add some features for rails development
 
-" Snippets
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+" ---------- Snippets ----------
+Plugin 'SirVer/ultisnips'   " Solution for snippets in Vim
+Plugin 'honza/vim-snippets' " Contains snippets files for various programming languages
 
-" Others
-Plugin 'bogado/file-line.git'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'tpope/vim-endwise.git'
-Plugin 'tpope/vim-ragtag'
-Plugin 'tpope/vim-repeat.git'
-Plugin 'tpope/vim-surround.git'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'junegunn/vim-easy-align'
+" ---------- Others ----------
+Plugin 'bogado/file-line.git'    " Opening a file in a given line
+Plugin 'jiangmiao/auto-pairs'    " Insert or delete brackets, parens, quotes in pair
+Plugin 'tpope/vim-endwise.git'   " Adding end keywords to methods, structure controls...
+Plugin 'tpope/vim-ragtag'        " A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP...
+Plugin 'tpope/vim-repeat.git'    " Remaps '.' in a way that plugins can tap into it
+Plugin 'tpope/vim-surround.git'  " Provides mappings to easily delete, change and add such surroundings in pairs
+Plugin 'tpope/vim-unimpaired'    " Complementary pairs of mappings
+Plugin 'junegunn/vim-easy-align' " Alignament your code
 
-" Sources local bundles
+" ---------- Sources local bundles ----------
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
