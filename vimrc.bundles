@@ -19,8 +19,9 @@ Plugin 'scrooloose/nerdtree.git'     " Show files tree on project
 Plugin 'jistr/vim-nerdtree-tabs.git' " NERDTree feel like a true panel, independent of tabs
 
 " ---------- Git ----------
-Plugin 'tpope/vim-fugitive' " Git wrapper
-Plugin 'tpope/vim-git'      " One command is provided to show a diff of the current commit
+Plugin 'tpope/vim-fugitive'     " Git wrapper
+Plugin 'tpope/vim-git'          " One command is provided to show a diff of the current commit
+Plugin 'airblade/vim-gitgutter' " Shows whether each line has been added, modified, and where lines have been removed
 
 " ---------- Lenguages ----------
 Plugin 'pangloss/vim-javascript'                " Provides syntax and indent plugins for JS
