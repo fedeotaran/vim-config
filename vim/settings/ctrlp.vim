@@ -1,17 +1,16 @@
-if exists("g:ctrlp_user_command")
-  unlet g:ctrlp_user_command
-endif
-
 if executable('ag')
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command =
-    \ 'ag %s --files-with-matches -g "" --ignore "\.git$\|\.hg$\|\.svn$"'
+  let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ -g ""'
 
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 else
   " Fall back to using git ls-files if Ag is not available
-  let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
 endif
 
@@ -23,7 +22,7 @@ let g:ctrlp_by_filename = 0
 " several Tab workspaces and want to open two windows into the same file.
 let g:ctrlp_switch_buffer = 0
 
-" Change Ctrl-p mapping
+" " Change Ctrl-p mapping
 let g:ctrlp_map = '<leader>t'
 nnoremap <silent> <leader>t :CtrlP<CR>
 
@@ -36,7 +35,7 @@ nnoremap <silent> <D-P> :ClearCtrlPCache<cr>
 "Cmd-Shift-(M)ethod - jump to a method (tag in current file)
 "Ctrl-m is not good - it overrides behavior of Enter
 nnoremap <silent> <D-M> :CtrlPBufTag<CR>
-
+ 
 " Idea from : http://www.charlietanksley.net/blog/blog/2011/10/18/vim-navigation-with-lustyexplorer-and-lustyjuggler/
 " Open CtrlP starting from a particular path, making it much
 " more likely to find the correct thing first. mnemonic 'jump to [something]'
