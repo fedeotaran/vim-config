@@ -37,6 +37,17 @@ set splitbelow      " split new pane below current
 " ** Set mapleader
 let mapleader=","
 
+" ** Tab key mapping
+
+nnoremap th  :tabfirst<CR>
+nnoremap tj  :tabnext<CR>
+nnoremap tk  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tt  :tabedit<Space>
+nnoremap tn  :tabnew<CR>
+nnoremap tm  :tabm<Space>
+nnoremap td  :tabclose<CR>
+
 " ** Source bundles
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles

@@ -8,6 +8,7 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim' " Vim plugin manager
 
+Plugin 'tmhedberg/matchit'
 " ---------- Apparence ----------
 Plugin 'morhetz/gruvbox'       " Theme colors
 Plugin 'itchyny/lightline.vim' " Information line
@@ -17,6 +18,7 @@ Plugin 'ctrlpvim/ctrlp.vim'          " Search projects files
 Plugin 'tacahiroy/ctrlp-funky'       " Search methods definitions on current file
 Plugin 'scrooloose/nerdtree.git'     " Show files tree on project
 Plugin 'jistr/vim-nerdtree-tabs.git' " NERDTree feel like a true panel, independent of tabs
+Plugin 'tpope/vim-vinegar'
 
 " ---------- Git ----------
 Plugin 'tpope/vim-fugitive'     " Git wrapper
