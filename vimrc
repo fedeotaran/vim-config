@@ -33,20 +33,10 @@ set backspace=2     " backspace deletes like most programs in insert mode
 set autoread        " automatically read a file when it is changed from the outside
 set splitright      " split new pane right current
 set splitbelow      " split new pane below current
+let g:netrw_dirhistmax = 0
 
 " ** Set mapleader
 let mapleader=","
-
-" ** Tab key mapping
-
-nnoremap th  :tabfirst<CR>
-nnoremap tj  :tabnext<CR>
-nnoremap tk  :tabprev<CR>
-nnoremap tl  :tablast<CR>
-nnoremap tt  :tabedit<Space>
-nnoremap tn  :tabnew<CR>
-nnoremap tm  :tabm<Space>
-nnoremap td  :tabclose<CR>
 
 " ** Source bundles
 if filereadable(expand("~/.vimrc.bundles"))

@@ -8,17 +8,14 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim' " Vim plugin manager
 
-Plugin 'tmhedberg/matchit'
 " ---------- Apparence ----------
 Plugin 'morhetz/gruvbox'       " Theme colors
 Plugin 'itchyny/lightline.vim' " Information line
 
 " ---------- Project ----------
-Plugin 'ctrlpvim/ctrlp.vim'          " Search projects files
-Plugin 'tacahiroy/ctrlp-funky'       " Search methods definitions on current file
-Plugin 'scrooloose/nerdtree.git'     " Show files tree on project
-Plugin 'jistr/vim-nerdtree-tabs.git' " NERDTree feel like a true panel, independent of tabs
-Plugin 'tpope/vim-vinegar'
+Plugin 'ctrlpvim/ctrlp.vim'    " Search projects files
+Plugin 'tacahiroy/ctrlp-funky' " Search methods definitions on current file
+Plugin 'tpope/vim-vinegar'     " Split window with project drawer
 
 " ---------- Git ----------
 Plugin 'tpope/vim-fugitive'     " Git wrapper
@@ -36,6 +33,7 @@ Plugin 'SirVer/ultisnips'   " Solution for snippets in Vim
 Plugin 'honza/vim-snippets' " Contains snippets files for various programming languages
 
 " ---------- Others ----------
+Plugin 'tmhedberg/matchit'       " allows you to configure % to match more than just single character
 Plugin 'bogado/file-line.git'    " Opening a file in a given line
 Plugin 'jiangmiao/auto-pairs'    " Insert or delete brackets, parens, quotes in pair
 Plugin 'tpope/vim-endwise.git'   " Adding end keywords to methods, structure controls...
