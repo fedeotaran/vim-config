@@ -25,15 +25,21 @@ Plugin 'tpope/vim-fugitive'     " Git wrapper
 Plugin 'tpope/vim-git'          " One command is provided to show a diff of the current commit
 Plugin 'airblade/vim-gitgutter' " Shows whether each line has been added, modified, and where lines have been removed
 
-" ---------- Lenguages ----------
+" --------- Lenguages ----------
 Plugin 'pangloss/vim-javascript'                " Provides syntax and indent plugins for JS
 Plugin 'othree/javascript-libraries-syntax.vim' " Syntax file for JavaScript libraries
 Plugin 'vim-ruby/vim-ruby'                      " Contains Vim configuration files for editing and compiling Ruby
 Plugin 'tpope/vim-rails'                        " Add some features for rails development
 
-" ---------- Snippets ----------
+" --------- Snippets ----------
 Plugin 'SirVer/ultisnips'   " Solution for snippets in Vim
 Plugin 'honza/vim-snippets' " Contains snippets files for various programming languages
+
+" --------- Text Object -------
+Plugin 'kana/vim-textobj-user'            " Create your own text object
+Plugin 'vim-scripts/argtextobj.vim'       " Provides a text object for function arguments
+Plugin 'michaeljsmith/vim-indent-object'  " Provides a text object based on indentation level
+Plugin 'nelstrom/vim-textobj-rubyblock'   " Provides a text object based on a Ruby block
 
 " ---------- Others ----------
 Plugin 'bogado/file-line.git'    " Opening a file in a given line

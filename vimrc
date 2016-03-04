@@ -37,8 +37,13 @@ set splitbelow      " split new pane below current
 " ** Set mapleader
 let mapleader=","
 
-" ** Tab key mapping
+" ** Disable arrows
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
+" ** Tab key mapping
 nnoremap th  :tabfirst<CR>
 nnoremap tj  :tabnext<CR>
 nnoremap tk  :tabprev<CR>
