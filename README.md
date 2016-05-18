@@ -22,8 +22,7 @@ Put your own customizations in dotfiles appended with .local:
 ## What's included?
 ### Vim plugins
 * [Vundle](https://github.com/gmarik/Vundle.vim) to manage plugins.
-* [Gruvbox](https://github.com/morhetz/gruvbox) to color scheme.
-* [Tender](https://github.com/jacoborus/tender) other color scheme.
+* [Gruvbox](https://github.com/morhetz/gruvbox) and [Tender](https://github.com/jacoborus/tender) to color scheme.
 * [Lightline](https://github.com/itchyny/lightline.vim) to statusline/tabline.
 * [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim) to file finding.
 * [Ctrlp-funky](https://github.com/tacahiroy/ctrlp-funky) function navigator to ctrlp.
