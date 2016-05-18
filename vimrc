@@ -54,7 +54,7 @@ syntax on
 syntax enable
 set t_Co=256
 set background=dark
-colorscheme gruvbox
+colorscheme tender
 
 " disable Background Color Erase (BCE) so that color schemes
 " render properly when inside 256-color tmux and GNU screen.
