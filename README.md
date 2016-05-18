@@ -1,15 +1,15 @@
-Dotfiles
+Vim config
 ========
 These are my vim configuration files.
 
 ## Install
 ```bash
-git clone https://github.com/fedeotaran/dotfiles.git && cd dotfiles && bash install.sh
+git clone https://github.com/fedeotaran/vim-config.git && cd vim-config && bash install.sh
 ```
 
 ## Upgrading
 ```bash
-cd <path_of_your_installation>/dotfiles
+cd <path_of_your_installation>/vim-config
 git pull
 ```
 Make sure to run `install.sh` after to install new plugins.
