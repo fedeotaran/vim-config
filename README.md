@@ -27,7 +27,7 @@ Put your own customizations in dotfiles appended with .local:
 * [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim) to file finding.
 * [Ctrlp-funky](https://github.com/tacahiroy/ctrlp-funky) function navigator to ctrlp.
 * [NERDtree](https://github.com/scrooloose/nerdtree) to explore your filesystem and to open files and directories.
-* [Vim-vinegar](https://github.com/tpope/vim-vinegar) split windows and the project drawer go together
+* [Vim-vinegar](https://github.com/tpope/vim-vinegar) split windows and the project drawer go together.
 * [Ultisnips](https://github.com/sirver/ultisnips) and [Vim-snippets](https://github.com/honza/vim-snippets) for vim snippets.
 * [Vim-fugitive](https://github.com/tpope/vim-fugitive) and [Vim-git](https://github.com/tpope/vim-git) for git features.
 * And many others plugins...
