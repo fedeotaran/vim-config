@@ -3,6 +3,9 @@
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 
+" Active spellchecker
+nmap <silent> <leader>s :set spell!<CR>
+
 " Press ',v' and go to edit .vimrc file
 nmap <leader>v :tabedit $MYVIMRC<CR>
 

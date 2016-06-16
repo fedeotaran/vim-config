@@ -1,3 +1,4 @@
+let g:tender_lightline = 1
 let g:lightline = {
         \ 'colorscheme': 'tender',
         \ 'active': {
