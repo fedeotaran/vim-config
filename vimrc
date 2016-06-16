@@ -25,6 +25,7 @@ set history=50      " history commands
 set ruler           " show the cursor position all the time
 set showcmd         " display incomplete commands
 set incsearch       " do incremental searching
+set hlsearch        " highlighting search matches
 set laststatus=2    " always display the status line
 set autowrite       " automatically :write before running commands
 set number          " use normal numbers
