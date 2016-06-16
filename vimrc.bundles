@@ -28,6 +28,7 @@ Plugin 'pangloss/vim-javascript'                " Provides syntax and indent plu
 Plugin 'othree/javascript-libraries-syntax.vim' " Syntax file for JavaScript libraries
 Plugin 'vim-ruby/vim-ruby'                      " Contains Vim configuration files for editing and compiling Ruby
 Plugin 'tpope/vim-rails'                        " Add some features for rails development
+Plugin 'tpope/vim-bundler'
 
 " --------- Snippets ----------
 Plugin 'SirVer/ultisnips'   " Solution for snippets in Vim
@@ -41,6 +42,7 @@ Plugin 'nelstrom/vim-textobj-rubyblock'   " Provides a text object based on a Ru
 
 " ---------- Others ----------
 Plugin 'Yggdroot/indentLine'
+Plugin 'Yggdroot/hiPairs'
 Plugin 'mattn/emmet-vim'         " Provides support for expanding abbreviations similar to Emmet
 Plugin 'tmhedberg/matchit'       " Allows you to configure % to match more than just single character
 Plugin 'bogado/file-line.git'    " Opening a file in a given line
