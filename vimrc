@@ -17,8 +17,8 @@ set tabpagemax=50
 set list listchars=tab:»·,trail:·,nbsp:·
 
 " Split panels
-set splitbelow
-set splitright
+set splitright      " split new pane right current
+set splitbelow      " split new pane below current
 
 " ** Others
 set history=50      " history commands
@@ -31,8 +31,7 @@ set number          " use normal numbers
 set relativenumber  " and relative line numbers
 set backspace=2     " backspace deletes like most programs in insert mode
 set autoread        " automatically read a file when it is changed from the outside
-set splitright      " split new pane right current
-set splitbelow      " split new pane below current
+set spelllang=es_ar " set spellcheck lang
 
 " ** Set mapleader
 let mapleader=","
