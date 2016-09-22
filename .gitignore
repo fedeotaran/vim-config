@@ -1,4 +1,6 @@
 backups/*
 vim/spell
 vim/bundle/*
+vim/autoload
+vim/plugged
 vim/.netrwhist

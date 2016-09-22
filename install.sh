@@ -11,7 +11,7 @@ Y="\033[0;33m"
 RESET="\033[0m"
 
 # Files to create symbolics links
-ln_files=("vim" "vimrc" "vimrc.bundles")
+ln_files=("vim" "vimrc" "vimrc.plugins")
 bckpdir="${PWD}/backups/$(date "+%Y%m%d%H%M%S_backup")"
 [ ! -d $bckpdir ] && mkdir -p $bckpdir
 for name in *; do
@@ -33,11 +33,12 @@ for name in *; do
 done
 
 # Install vim plugins
-echo -e "$G [+] Install vim bundles"
-if [ ! -e $HOME/.vim/bundle/Vundle.vim ]; then
-  echo -e "$G [+] Cloning Vundle"
-  git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+echo -e "$G [+] Install vim plugins"
+if [ ! -e $HOME/.vim/autoload/plug.vim ]; then
+  echo -e "$G [+] Download Plug $RESET"
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
-vim -u $HOME/.vimrc.bundles +PluginInstall +PluginClean! +qa
+vim -u $HOME/.vimrc.plugins +PlugInstall +PlugClean! +qa
 
-echo "All done."
+echo -e "$G All done. $RESET"

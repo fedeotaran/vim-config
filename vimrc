@@ -21,11 +21,13 @@ set splitright      " split new pane right current
 set splitbelow      " split new pane below current
 
 " ** Others
+set cursorline      " highlighting cursor line
+set cursorcolumn    " highlighting cursor column
+set t_ti= t_te=     " when exit vim show last window
 set history=50      " history commands
 set ruler           " show the cursor position all the time
 set showcmd         " display incomplete commands
 set incsearch       " do incremental searching
-set hlsearch        " highlighting search matches
 set laststatus=2    " always display the status line
 set autowrite       " automatically :write before running commands
 set number          " use normal numbers
@@ -38,8 +40,8 @@ set spelllang=es_ar " set spellcheck lang
 let mapleader=","
 
 " ** Source bundles
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
+if filereadable(expand("~/.vimrc.plugins"))
+  source ~/.vimrc.plugins
 endif
 
 " ** Source bundles settigs

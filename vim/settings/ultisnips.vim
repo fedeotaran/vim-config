@@ -1,5 +1,5 @@
 " UltiSnips configurations
-let g:UltiSnipsSnippetsDir="~/.vim/bundle/vim-snippets/UltiSnips"
+let g:UltiSnipsSnippetsDir="~/.vim/plugged/vim-snippets/UltiSnips"
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
