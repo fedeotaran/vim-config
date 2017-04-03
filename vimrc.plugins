@@ -28,6 +28,7 @@ Plug 'othree/javascript-libraries-syntax.vim' " Syntax file for JavaScript libra
 Plug 'vim-ruby/vim-ruby'                      " Contains Vim configuration files for editing and compiling Ruby
 Plug 'tpope/vim-rails'                        " Add some features for rails development
 Plug 'tpope/vim-bundler'
+Plug 'elixir-lang/vim-elixir'
 
 " ------- Snippets ----------
 Plug 'SirVer/ultisnips'   " Solution for snippets in Vim
