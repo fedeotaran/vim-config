@@ -1,6 +1,12 @@
 " *** Use Vim settings, rather then Vi settings.
 set nocompatible
 
+" ** set path to find files
+set path=$PWD/**
+
+" ** Create tags
+command! MakeTags !ctags -R .
+
 " ** Backup
 set nobackup
 set nowritebackup
@@ -14,7 +20,7 @@ set expandtab       " use spaces instead of tabset shiftwidth=2
 set tabpagemax=50
 
 " ** Display extra whitespace
-set list listchars=tab:»·,trail:·,nbsp:·
+set list listchars=tab:»·,trail:·,nbsp:·,eol:¬
 
 " Split panels
 set splitright      " split new pane right current
@@ -74,4 +80,5 @@ if filereadable($HOME . "/.vimrc.local")
 endif
 
 let &colorcolumn=join(range(81,999),",")
-let &colorcolumn="90,".join(range(400,999),",")
+
+let &colorcolumn="80,".join(range(400,999),",")
