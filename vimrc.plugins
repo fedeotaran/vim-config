@@ -6,9 +6,12 @@ filetype off
 call plug#begin('~/.vim/plugged')
 
 " -------- Apparence ----------
-Plug 'jacoborus/tender'      " Colors schema
-Plug 'morhetz/gruvbox'       " Theme colors
-Plug 'itchyny/lightline.vim' " Information line
+"  ## Colors schema
+Plug 'jacoborus/tender'
+Plug 'morhetz/gruvbox'
+Plug 'drewtempelmeyer/palenight.vim'
+"  ## Status Line
+Plug 'itchyny/lightline.vim'
 
 " -------- Project ----------
 Plug 'tpope/vim-vinegar'     " Split window with project drawer
@@ -23,12 +26,19 @@ Plug 'tpope/vim-git'          " One command is provided to show a diff of the cu
 Plug 'airblade/vim-gitgutter' " Shows whether each line has been added, modified, and where lines have been removed
 
 " ------- Lenguages ----------
+"  ## JavaScript
 Plug 'pangloss/vim-javascript'                " Provides syntax and indent plugins for JS
 Plug 'othree/javascript-libraries-syntax.vim' " Syntax file for JavaScript libraries
+" ## Ruby
 Plug 'vim-ruby/vim-ruby'                      " Contains Vim configuration files for editing and compiling Ruby
 Plug 'tpope/vim-rails'                        " Add some features for rails development
 Plug 'tpope/vim-bundler'
+" ## Elixir
 Plug 'elixir-lang/vim-elixir'
+" ## Python 
+Plug 'vim-scripts/indentpython.vim'
+Plug 'vim-syntastic/syntastic'
+Plug 'nvie/vim-flake8'
 
 " ------- Snippets ----------
 Plug 'SirVer/ultisnips'   " Solution for snippets in Vim

@@ -1,9 +1,6 @@
 " *** Use Vim settings, rather then Vi settings.
 set nocompatible
 
-" ** set path to find files
-set path=$PWD/**
-
 " ** Create tags
 command! MakeTags !ctags -R .
 
@@ -62,7 +59,7 @@ syntax on
 syntax enable
 set t_Co=256
 set background=dark
-colorscheme nova
+colorscheme palenight
 
 " disable Background Color Erase (BCE) so that color schemes
 " render properly when inside 256-color tmux and GNU screen.
@@ -72,6 +69,19 @@ if &term =~ '256color'
   set t_ut=
 endif
 
+" Enable truecolors
+if (has("nvim"))
+  "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
+
+"For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
+"Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
+" < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 filetype plugin indent on
 
 " ** Source local configs
@@ -79,6 +89,4 @@ if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
-let &colorcolumn=join(range(81,999),",")
-highlight ColorColumn ctermbg=235 guibg=#2c2d27
-
+set colorcolumn=81
