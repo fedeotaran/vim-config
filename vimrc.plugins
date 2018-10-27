@@ -17,7 +17,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-vinegar'     " Split window with project drawer
 
 " ----- Fuzzy Search ------
-Plug "$(which fzf)"
+Plug '$(which fzf)'
 Plug 'junegunn/fzf.vim'                                           " Vim integrtion
 
 " -------- Git ----------
