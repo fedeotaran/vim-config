@@ -14,6 +14,9 @@ RESET="\033[0m"
 ln_files=("vim" "vimrc" "vimrc.plugins")
 bckpdir="${PWD}/backups/$(date "+%Y%m%d%H%M%S_backup")"
 [ ! -d $bckpdir ] && mkdir -p $bckpdir
+
+echo -e "$G ==> Setup vim configuration"
+
 for name in *; do
   if [[ ${ln_files[*]} =~ $name ]]; then
     target="$HOME/.$name"
@@ -35,7 +38,7 @@ done
 # Install vim plugins
 echo -e "$G [+] Install vim plugins"
 if [ ! -e $HOME/.vim/autoload/plug.vim ]; then
-  echo -e "$G [+] Download Plug $RESET"
+  echo -e "$G [+] Download vim-plug $RESET"
   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
