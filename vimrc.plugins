@@ -17,7 +17,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-vinegar'     " Split window with project drawer
 
 " ----- Fuzzy Search ------
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Download and install fzf
+Plug '$(which fzf)'
 Plug 'junegunn/fzf.vim'                                           " Vim integrtion
 
 " -------- Git ----------
@@ -26,40 +26,18 @@ Plug 'tpope/vim-git'          " One command is provided to show a diff of the cu
 Plug 'airblade/vim-gitgutter' " Shows whether each line has been added, modified, and where lines have been removed
 
 " ------- Lenguages ----------
-"  ## JavaScript
-Plug 'pangloss/vim-javascript'                " Provides syntax and indent plugins for JS
-Plug 'othree/javascript-libraries-syntax.vim' " Syntax file for JavaScript libraries
-" ## Ruby
-Plug 'vim-ruby/vim-ruby'                      " Contains Vim configuration files for editing and compiling Ruby
-Plug 'tpope/vim-rails'                        " Add some features for rails development
-Plug 'tpope/vim-bundler'
 " ## Elixir
 Plug 'elixir-lang/vim-elixir'
-" ## Python 
-Plug 'vim-scripts/indentpython.vim'
-Plug 'vim-syntastic/syntastic'
-Plug 'nvie/vim-flake8'
 
 " ------- Snippets ----------
 Plug 'SirVer/ultisnips'   " Solution for snippets in Vim
 Plug 'honza/vim-snippets' " Contains snippets files for various programming languages
 
-" ------- Text Object -------
-Plug 'kana/vim-textobj-user'            " Create your own text object
-Plug 'vim-scripts/argtextobj.vim'       " Provides a text object for function arguments
-Plug 'michaeljsmith/vim-indent-object'  " Provides a text object based on indentation level
-Plug 'nelstrom/vim-textobj-rubyblock'   " Provides a text object based on a Ruby block
-
 " -------- Others ----------
 Plug 'mattn/emmet-vim'         " Provides support for expanding abbreviations similar to Emmet
-Plug 'tmhedberg/matchit'       " Allows you to configure % to match more than just single character
 Plug 'bogado/file-line'        " Opening a file in a given line
-Plug 'jiangmiao/auto-pairs'    " Insert or delete brackets, parens, quotes in pair
-Plug 'tpope/vim-endwise'       " Adding end keywords to methods, structure controls...
-Plug 'tpope/vim-ragtag'        " A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP...
 Plug 'tpope/vim-repeat'        " Remaps '.' in a way that plugins can tap into it
 Plug 'tpope/vim-surround'      " Provides mappings to easily delete, change and add such surroundings in pairs
-Plug 'tpope/vim-unimpaired'    " Complementary pairs of mappings
 Plug 'junegunn/vim-easy-align' " Alignament your code
 
 " ---------- Sources local bundles ----------
