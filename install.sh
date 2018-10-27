@@ -44,4 +44,4 @@ if [ ! -e $HOME/.vim/autoload/plug.vim ]; then
 fi
 vim -u $HOME/.vimrc.plugins +PlugInstall +PlugClean! +qa
 
-echo -e "$G All done. $RESET"
+echo -e "$G Vim configuration done!. $RESET"
