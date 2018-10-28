@@ -2,6 +2,8 @@ if &compatible
  set nocompatible
 end
 
+let s:darwin = has('mac')
+
 filetype off
 call plug#begin('~/.vim/plugged')
 
@@ -10,24 +12,30 @@ call plug#begin('~/.vim/plugged')
 Plug 'jacoborus/tender'
 Plug 'morhetz/gruvbox'
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'junegunn/seoul256.vim'
 "  ## Status Line
 Plug 'itchyny/lightline.vim'
 
 " -------- Project ----------
 Plug 'tpope/vim-vinegar'     " Split window with project drawer
+Plug 't9md/vim-choosewin'
 
 " ----- Fuzzy Search ------
 Plug '$(which fzf)'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'                                           " Vim integrtion
 
 " -------- Git ----------
 Plug 'tpope/vim-fugitive'     " Git wrapper
 Plug 'tpope/vim-git'          " One command is provided to show a diff of the current commit
-Plug 'airblade/vim-gitgutter' " Shows whether each line has been added, modified, and where lines have been removed
+Plug 'mhinz/vim-signify' " Shows whether each line has been added, modified, and where lines have been removed
 
 " ------- Lenguages ----------
-" ## Elixir
 Plug 'elixir-lang/vim-elixir'
+Plug 'kh3phr3n/python-syntax'
+
+" ------ Text Object --------
+Plug 'junegunn/vim-after-object'
 
 " ------- Snippets ----------
 Plug 'SirVer/ultisnips'   " Solution for snippets in Vim
@@ -39,6 +47,35 @@ Plug 'bogado/file-line'        " Opening a file in a given line
 Plug 'tpope/vim-repeat'        " Remaps '.' in a way that plugins can tap into it
 Plug 'tpope/vim-surround'      " Provides mappings to easily delete, change and add such surroundings in pairs
 Plug 'junegunn/vim-easy-align' " Alignament your code
+Plug 'junegunn/vim-slash'      " Provides a set of mappings for enhancing in-buffer search experience in Vim.
+Plug 'junegunn/vim-pseudocl'
+Plug 'junegunn/vim-fnr'        " Amazing search and replate plugin
+Plug 'junegunn/vim-peekaboo'   " Show registers content
+Plug 'tpope/vim-commentary'
+Plug 'junegunn/vim-journal'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'sgur/vim-editorconfig'
+if s:darwin
+  Plug 'junegunn/vim-xmark'
+endif
+Plug 'jiangmiao/auto-pairs'
+Plug 'Yggdroot/indentLine', { 'on': 'IndentLinesEnable' }
+autocmd! User indentLine doautocmd indentLine Syntax
+
+if v:version >= 703
+  Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
+endif
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
 
 " ---------- Sources local bundles ----------
 if filereadable(expand("~/.vimrc.plugins.local"))
