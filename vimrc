@@ -24,8 +24,8 @@ set splitright      " split new pane right current
 set splitbelow      " split new pane below current
 
 " ** Others
-"set cursorline      " highlighting cursor line
-"set cursorcolumn    " highlighting cursor column
+set cursorline      " highlighting cursor line
+set cursorcolumn    " highlighting cursor column
 set t_ti= t_te=     " when exit vim show last window
 set history=50      " history commands
 set ruler           " show the cursor position all the time
@@ -59,7 +59,7 @@ syntax on
 syntax enable
 set t_Co=256
 set background=dark
-colorscheme palenight
+colorscheme snazzy
 
 " disable Background Color Erase (BCE) so that color schemes
 " render properly when inside 256-color tmux and GNU screen.
@@ -89,4 +89,9 @@ if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
+set completefunc=emoji#complete
+set omnifunc=emoji#complete
 set colorcolumn=81
+
+"let g:python_host_prog = $HOME . "/.pyenv/shims/python"
+"let g:python3_host_prog = $HOME . "/.pyenv/shims/python3"
