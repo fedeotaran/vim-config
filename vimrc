@@ -93,5 +93,5 @@ set completefunc=emoji#complete
 set omnifunc=emoji#complete
 set colorcolumn=81
 
-"let g:python_host_prog = $HOME . "/.pyenv/shims/python"
-"let g:python3_host_prog = $HOME . "/.pyenv/shims/python3"
+let g:python_host_prog = $HOME . "/.pyenv/shims/python"
+let g:python3_host_prog = $HOME . "/.pyenv/shims/python3"

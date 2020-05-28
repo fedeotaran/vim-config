@@ -39,8 +39,8 @@ done
 echo -e "$G [+] Install vim plugins"
 if [ ! -e $HOME/.vim/autoload/plug.vim ]; then
   echo -e "$G [+] Download vim-plug $RESET"
-  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 fi
 vim -u $HOME/.vimrc.plugins +PlugInstall +PlugClean! +qa
 
