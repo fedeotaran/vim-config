@@ -1,19 +1,3 @@
-"let g:ale_linters = {
-"\   'ruby': ['solargraph', 'rubocop'],
-"\   'elixir': ['mix']
-"\}
-"let g:ale_fixers = {
-"\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-"\   'elixir': ['mix_format'],
-"\}
-"
-"let g:ale_fix_on_save = 1
-"let g:ale_linters_explicit = 0
-"let g:ale_sign_column_always = 1
-"let g:ale_set_highlights = 0
-"let g:ale_echo_msg_error_str = 'E'
-"let g:ale_echo_msg_warning_str = 'W'
-"let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 " TextEdit might fail if hidden is not set.
 set hidden
 

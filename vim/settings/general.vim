@@ -39,25 +39,9 @@ let choosewin_overlay_enable = 1
 let g:choosewin_blink_on_land      = 0 " don't blink at land
 let g:choosewin_statusline_replace = 0 " don't replace statusline
 let g:choosewin_tabline_replace    = 0 " don't replace tabline
-" old pane selector mappings
-" tnoremap <A-h> <C-\><C-N><C-w>h
-" tnoremap <A-j> <C-\><C-N><C-w>j
-" tnoremap <A-k> <C-\><C-N><C-w>k
-" tnoremap <A-l> <C-\><C-N><C-w>l
-" inoremap <A-h> <C-\><C-N><C-w>h
-" inoremap <A-j> <C-\><C-N><C-w>j
-" inoremap <A-k> <C-\><C-N><C-w>k
-" inoremap <A-l> <C-\><C-N><C-w>l
-" nnoremap <A-h> <C-w>h
-" nnoremap <A-j> <C-w>j
-" nnoremap <A-k> <C-w>k
-" nnoremap <A-l> <C-w>l
 
 " Pairs colors
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{','}']]
-
-" Snazzy Theme
-let g:SnazzyTransparent = 1
 
 " Mix formatter
 let g:mix_format_on_save = 1

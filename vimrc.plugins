@@ -8,33 +8,32 @@ let s:darwin = has('mac')
 filetype off
 call plug#begin('~/.vim/plugged')
 
-" -------- Apparence ----------
-"  ## Colors schema
+"  ** Colors schema
 Plug 'jacoborus/tender'
 Plug 'morhetz/gruvbox'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'junegunn/seoul256.vim'
-Plug 'connorholyday/vim-snazzy'
-Plug 'dguo/blood-moon', {'rtp': 'applications/vim'}
+Plug 'sainnhe/gruvbox-material'
+Plug 'colepeters/spacemacs-theme.vim'
 
-"  ## Status Line
+"  ** Status Line
 Plug 'itchyny/lightline.vim'
 
-" -------- Project ----------
+" ** Project
 Plug 'tpope/vim-vinegar'     " Split window with project drawer
 Plug 't9md/vim-choosewin'
 
-" ----- Fuzzy Search ------
+" ** Fuzzy Search
 Plug '$(which fzf)'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'                                           " Vim integrtion
 
-" -------- Git ----------
+" ** Git
 Plug 'tpope/vim-fugitive' " Git wrapper
 Plug 'tpope/vim-git'      " One command is provided to show a diff of the current commit
 Plug 'mhinz/vim-signify'  " Shows whether each line has been added, modified, and where lines have been removed
 
-" ------- Lenguages ----------
+" ** Lenguages
 "  Elixir
 Plug 'elixir-lang/vim-elixir'
 Plug 'slashmili/alchemist.vim'
@@ -44,19 +43,17 @@ Plug 'kh3phr3n/python-syntax'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 
-" ------- Testing -----------
+" ** Testing
 Plug 'janko/vim-test'
 
-" ------ Text Object --------
+" ** Text Object
 Plug 'junegunn/vim-after-object'
 
-" ---------- LSP ------------
-"Plug 'dense-analysis/ale'
+" ** LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-
-" -------- Others ----------
-Plug 'mattn/emmet-vim'                 " Provides support for expanding abbreviations similar to Emmet
+" ** Others
+Plug 'mattn/emmet-vim'                  " Provides support for expanding abbreviations similar to Emmet
 Plug 'bogado/file-line'                 " Opening a file in a given line
 Plug 'tpope/vim-repeat'                 " Remaps '.' in a way that plugins can tap into it
 Plug 'tpope/vim-surround'               " Provides mappings to easily delete, change and add such surroundings in pairs
@@ -74,15 +71,7 @@ Plug 'TaDaa/vimade'                     " Fades inactives buffers
 Plug 'junegunn/vim-emoji'               " Show and complete emojis
 Plug 'jiangmiao/auto-pairs'
 
-"if has('nvim')
-"  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"else
-"  Plug 'Shougo/deoplete.nvim'
-"  Plug 'roxma/nvim-yarp'
-"  Plug 'roxma/vim-hug-neovim-rpc'
-"endif
-
-" ---------- Sources local bundles ----------
+" ** Sources local bundles
 if filereadable(expand("~/.vimrc.plugins.local"))
   source ~/.vimrc.plugins.local
 endif

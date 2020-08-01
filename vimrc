@@ -1,9 +1,6 @@
 " *** Use Vim settings, rather then Vi settings.
 set nocompatible
 
-" ** Create tags
-command! MakeTags !ctags -R .
-
 " ** Backup
 set nobackup
 set nowritebackup
@@ -19,13 +16,13 @@ set tabpagemax=50
 " ** Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·,eol:¬
 
-" Split panels
+" ** Split panels
 set splitright      " split new pane right current
 set splitbelow      " split new pane below current
 
 " ** Others
-set cursorline      " highlighting cursor line
-set cursorcolumn    " highlighting cursor column
+"set cursorline      " highlighting cursor line
+"set cursorcolumn    " highlighting cursor column
 set t_ti= t_te=     " when exit vim show last window
 set history=50      " history commands
 set ruler           " show the cursor position all the time
@@ -59,7 +56,7 @@ syntax on
 syntax enable
 set t_Co=256
 set background=dark
-colorscheme snazzy
+colorscheme gruvbox-material
 
 " disable Background Color Erase (BCE) so that color schemes
 " render properly when inside 256-color tmux and GNU screen.
