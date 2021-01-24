@@ -1,6 +1,6 @@
 "let g:tender_lightline = 1
 let g:lightline = {
-        \ 'colorscheme': 'gruvbox_material',
+        \ 'colorscheme': 'material',
         \ 'active': {
         \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ], ['ctrlpmark'] ],
         \   'right': [ [ 'syntastic', 'lineinfo' ], ['percent'], [ 'fileformat', 'fileencoding', 'filetype' ] ]

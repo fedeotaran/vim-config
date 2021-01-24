@@ -1,3 +1,6 @@
+let test#python#pytest#options = {
+  \ 'nearest':   '-vv',
+\}
 " Active spellchecker
 nmap <silent> <leader>s :set spell!<CR>
 

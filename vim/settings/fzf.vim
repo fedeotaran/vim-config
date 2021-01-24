@@ -7,6 +7,7 @@ autocmd! FileType fzf
 autocmd  FileType fzf set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
@@ -69,4 +70,13 @@ command! PlugHelp call fzf#run(fzf#wrap({
   \ 'source': sort(keys(g:plugs)),
   \ 'sink':   function('s:plug_help_sink')}))
 
-" }}}
+
+nnoremap <silent> <Leader><space> :<C-u>CocFzfList<CR>
+nnoremap <silent> <Leader>a       :<C-u>CocFzfList diagnostics<CR>
+nnoremap <silent> <Leader>b       :<C-u>CocFzfList diagnostics --current-buf<CR>
+nnoremap <silent> <Leader>c       :<C-u>CocFzfList commands<CR>
+nnoremap <silent> <Leader>e       :<C-u>CocFzfList extensions<CR>
+nnoremap <silent> <Leader>l       :<C-u>CocFzfList location<CR>
+nnoremap <silent> <Leader>o       :<C-u>CocFzfList outline<CR>
+nnoremap <silent> <Leader>s       :<C-u>CocFzfList symbols<CR>
+nnoremap <silent> <Leader>p       :<C-u>CocFzfListResume<CR>
