@@ -22,16 +22,16 @@ set splitbelow      " split new pane below current
 
 " ** Others
 "set cursorline      " highlighting cursor line
-"set cursorcolumn    " highlighting cursor column
+set cursorcolumn    " highlighting cursor column
 set t_ti= t_te=     " when exit vim show last window
 set history=50      " history commands
-set ruler           " show the cursor position all the time
 set showcmd         " display incomplete commands
 set incsearch       " do incremental searching
 set laststatus=2    " always display the status line
 set autowrite       " automatically :write before running commands
+set ruler           " show the cursor position all the time
 set number          " use normal numbers
-set relativenumber  " and relative line numbers
+set relativenumber  " show relative line numbers
 set backspace=2     " backspace deletes like most programs in insert mode
 set autoread        " automatically read a file when it is changed from the outside
 set spelllang=es_ar " set spellcheck lang
@@ -55,8 +55,10 @@ endif
 syntax on
 syntax enable
 set t_Co=256
-set background=dark
-colorscheme gruvbox-material
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256          " Remove this line if not necessary
+  source ~/.vimrc_background
+endif
 
 " disable Background Color Erase (BCE) so that color schemes
 " render properly when inside 256-color tmux and GNU screen.

@@ -8,13 +8,11 @@ let s:darwin = has('mac')
 filetype off
 call plug#begin('~/.vim/plugged')
 
+" TESTING
+Plug 'SkyLeach/pudb.vim'
+
 "  ** Colors schema
-Plug 'jacoborus/tender'
-Plug 'morhetz/gruvbox'
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'junegunn/seoul256.vim'
-Plug 'sainnhe/gruvbox-material'
-Plug 'colepeters/spacemacs-theme.vim'
+Plug 'chriskempson/base16-vim'
 
 "  ** Status Line
 Plug 'itchyny/lightline.vim'
@@ -27,6 +25,7 @@ Plug 't9md/vim-choosewin'
 Plug '$(which fzf)'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'                                           " Vim integrtion
+Plug 'antoinemadec/coc-fzf'
 
 " ** Git
 Plug 'tpope/vim-fugitive' " Git wrapper
@@ -34,14 +33,7 @@ Plug 'tpope/vim-git'      " One command is provided to show a diff of the curren
 Plug 'mhinz/vim-signify'  " Shows whether each line has been added, modified, and where lines have been removed
 
 " ** Lenguages
-"  Elixir
-Plug 'elixir-lang/vim-elixir'
-Plug 'slashmili/alchemist.vim'
-"  Python
-Plug 'kh3phr3n/python-syntax'
-"  Ruby
-Plug 'vim-ruby/vim-ruby'
-Plug 'tpope/vim-rails'
+Plug 'sheerun/vim-polyglot'
 
 " ** Testing
 Plug 'janko/vim-test'
@@ -57,19 +49,19 @@ Plug 'mattn/emmet-vim'                  " Provides support for expanding abbrevi
 Plug 'bogado/file-line'                 " Opening a file in a given line
 Plug 'tpope/vim-repeat'                 " Remaps '.' in a way that plugins can tap into it
 Plug 'tpope/vim-surround'               " Provides mappings to easily delete, change and add such surroundings in pairs
+Plug 'tpope/vim-sensible'               " Set defaults settings
+Plug 'tpope/vim-commentary'             " Comment code
 Plug 'junegunn/vim-easy-align'          " Alignament your code
 Plug 'junegunn/vim-slash'               " Provides a set of mappings for enhancing in-buffer search experience in Vim.
 Plug 'junegunn/vim-pseudocl'
 Plug 'junegunn/vim-fnr'                 " Amazing search and replate plugin
 Plug 'junegunn/vim-peekaboo'            " Show registers content
-Plug 'tpope/vim-commentary'             " Comment code
 Plug 'junegunn/goyo.vim'                " Avoid distraction on presentations
 Plug 'junegunn/limelight.vim'           " Coplemento for Goyo
 Plug 'junegunn/rainbow_parentheses.vim' " Mark parentheses
 Plug 'sgur/vim-editorconfig'            " Editor conf file (not used)
 Plug 'TaDaa/vimade'                     " Fades inactives buffers
 Plug 'junegunn/vim-emoji'               " Show and complete emojis
-Plug 'jiangmiao/auto-pairs'
 
 " ** Sources local bundles
 if filereadable(expand("~/.vimrc.plugins.local"))
