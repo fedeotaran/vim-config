@@ -1,6 +1,10 @@
 let test#python#pytest#options = {
   \ 'nearest':   '-vv',
 \}
+let g:test#javascript#runner = 'jest'
+let g:AutoPairsShortcutFastWrap = '<C-.>'
+
+
 " Active spellchecker
 nmap <silent> <leader>s :set spell!<CR>
 

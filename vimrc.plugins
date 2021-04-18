@@ -8,65 +8,65 @@ let s:darwin = has('mac')
 filetype off
 call plug#begin('~/.vim/plugged')
 
-" TESTING
-Plug 'SkyLeach/pudb.vim'
+  "  ** Colors schema
+  Plug 'chriskempson/base16-vim'
 
-"  ** Colors schema
-Plug 'chriskempson/base16-vim'
+  "  ** Status Line
+  Plug 'itchyny/lightline.vim'
 
-"  ** Status Line
-Plug 'itchyny/lightline.vim'
+  " ** Project
+  Plug 'tpope/vim-vinegar'     " Split window with project drawer
+  Plug 't9md/vim-choosewin'
 
-" ** Project
-Plug 'tpope/vim-vinegar'     " Split window with project drawer
-Plug 't9md/vim-choosewin'
+  " ** Fuzzy Search
+  Plug '$(which fzf)'
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+  Plug 'junegunn/fzf.vim'                                           " Vim integrtion
+  Plug 'antoinemadec/coc-fzf'
 
-" ** Fuzzy Search
-Plug '$(which fzf)'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-Plug 'junegunn/fzf.vim'                                           " Vim integrtion
-Plug 'antoinemadec/coc-fzf'
+  " ** Git
+  Plug 'tpope/vim-fugitive' " Git wrapper
+  Plug 'tpope/vim-git'      " One command is provided to show a diff of the current commit
+  Plug 'mhinz/vim-signify'  " Shows whether each line has been added, modified, and where lines have been removed
 
-" ** Git
-Plug 'tpope/vim-fugitive' " Git wrapper
-Plug 'tpope/vim-git'      " One command is provided to show a diff of the current commit
-Plug 'mhinz/vim-signify'  " Shows whether each line has been added, modified, and where lines have been removed
+  " ** Lenguages
+  Plug 'sheerun/vim-polyglot'
 
-" ** Lenguages
-Plug 'sheerun/vim-polyglot'
+  " ** Testing
+  Plug 'janko/vim-test'
 
-" ** Testing
-Plug 'janko/vim-test'
+  " ** Text Object
+  Plug 'junegunn/vim-after-object'
 
-" ** Text Object
-Plug 'junegunn/vim-after-object'
+  " ** LSP
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " Plug 'elixir-lsp/elixir-ls', { 'do': { -> g:elixirls.compile() } }
+  " Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 
-" ** LSP
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " ** Others
+  Plug 'mattn/emmet-vim'                  " Provides support for expanding abbreviations similar to Emmet
+  Plug 'bogado/file-line'                 " Opening a file in a given line
+  Plug 'tpope/vim-repeat'                 " Remaps '.' in a way that plugins can tap into it
+  Plug 'tpope/vim-surround'               " Provides mappings to easily delete, change and add such surroundings in pairs
+  Plug 'tpope/vim-sensible'               " Set defaults settings
+  Plug 'tpope/vim-commentary'             " Comment code
+  Plug 'junegunn/vim-easy-align'          " Alignament your code
+  Plug 'junegunn/vim-slash'               " Provides a set of mappings for enhancing in-buffer search experience in Vim.
+  Plug 'junegunn/vim-pseudocl'
+  Plug 'junegunn/vim-fnr'                 " Amazing search and replate plugin
+  Plug 'junegunn/vim-peekaboo'            " Show registers content
+  Plug 'junegunn/goyo.vim'                " Avoid distraction on presentations
+  Plug 'junegunn/limelight.vim'           " Coplemento for Goyo
+  Plug 'junegunn/rainbow_parentheses.vim' " Mark parentheses
+  Plug 'sgur/vim-editorconfig'            " Editor conf file (not used)
+  "Plug 'TaDaa/vimade'                     " Fades inactives buffers
+  Plug 'junegunn/vim-emoji'               " Show and complete emojis
+  Plug 'jiangmiao/auto-pairs'
 
-" ** Others
-Plug 'mattn/emmet-vim'                  " Provides support for expanding abbreviations similar to Emmet
-Plug 'bogado/file-line'                 " Opening a file in a given line
-Plug 'tpope/vim-repeat'                 " Remaps '.' in a way that plugins can tap into it
-Plug 'tpope/vim-surround'               " Provides mappings to easily delete, change and add such surroundings in pairs
-Plug 'tpope/vim-sensible'               " Set defaults settings
-Plug 'tpope/vim-commentary'             " Comment code
-Plug 'junegunn/vim-easy-align'          " Alignament your code
-Plug 'junegunn/vim-slash'               " Provides a set of mappings for enhancing in-buffer search experience in Vim.
-Plug 'junegunn/vim-pseudocl'
-Plug 'junegunn/vim-fnr'                 " Amazing search and replate plugin
-Plug 'junegunn/vim-peekaboo'            " Show registers content
-Plug 'junegunn/goyo.vim'                " Avoid distraction on presentations
-Plug 'junegunn/limelight.vim'           " Coplemento for Goyo
-Plug 'junegunn/rainbow_parentheses.vim' " Mark parentheses
-Plug 'sgur/vim-editorconfig'            " Editor conf file (not used)
-Plug 'TaDaa/vimade'                     " Fades inactives buffers
-Plug 'junegunn/vim-emoji'               " Show and complete emojis
-
-" ** Sources local bundles
-if filereadable(expand("~/.vimrc.plugins.local"))
-  source ~/.vimrc.plugins.local
-endif
+  " ** Sources local bundles
+  if filereadable(expand("~/.vimrc.plugins.local"))
+    source ~/.vimrc.plugins.local
+  endif
 
 call plug#end()
 

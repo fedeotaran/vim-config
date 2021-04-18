@@ -1,8 +1,8 @@
 let g:coc_global_extensions = [ 
       \'coc-json',
       \'coc-cfn-lint',
-      \'coc-elixir',
       \'coc-fzf-preview',
+      \'coc-diagnostic',
       \'coc-prettier',
       \'coc-tsserver'
 \]
@@ -115,6 +115,7 @@ omap af <Plug>(coc-funcobj-a)
 nmap <silent> <TAB> <Plug>(coc-range-select)
 xmap <silent> <TAB> <Plug>(coc-range-select)
 
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocAction('format')
 
@@ -146,3 +147,11 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+" call coc#config('languageserver', {
+"   \ 'elixir': {
+"   \   'command': g:elixirls.lsp,
+"   \   'trace.server': 'verbose',
+"   \   'filetypes': ['elixir', 'eelixir']
+"   \ }
+"   \})

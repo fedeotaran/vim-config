@@ -22,7 +22,7 @@ set splitbelow      " split new pane below current
 
 " ** Others
 "set cursorline      " highlighting cursor line
-set cursorcolumn    " highlighting cursor column
+"set cursorcolumn    " highlighting cursor column
 set t_ti= t_te=     " when exit vim show last window
 set history=50      " history commands
 set showcmd         " display incomplete commands
@@ -38,6 +38,29 @@ set spelllang=es_ar " set spellcheck lang
 
 " ** Set mapleader
 let mapleader=","
+
+" let g:elixirls = {
+"   \ 'path': '~/.vim/plugged/elixir-ls',
+"   \ }
+
+" let g:elixirls.lsp = printf(
+"   \ '%s/%s',
+"   \ g:elixirls.path,
+"   \ 'release/language_server.sh')
+
+" function! g:elixirls.compile(...)
+"   let l:commands = join([
+"     \ 'mix local.hex --force',
+"     \ 'mix local.rebar --force',
+"     \ 'mix deps.get',
+"     \ 'mix compile',
+"     \ 'mix elixir_ls.release'
+"     \ ], '&&')
+
+"   echom '>>> Compiling elixirls'
+"   silent call system(l:commands)
+"   echom '>>> elixirls compiled'
+" endfunction
 
 " ** Source bundles
 if filereadable(expand("~/.vimrc.plugins"))
